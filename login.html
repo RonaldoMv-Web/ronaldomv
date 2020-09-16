@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="autor" content="Michuy Valera"> 
+        <link rel="stylesheet" href="estilos.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+        <title>RonaldoMv</title>
+
+        <script type="text/javascript">
+
+            function validar()
+            {
+                var usuario = document.getElementById("usuario").value;
+                var Contraseña = document.getElementById("pass").value;	
+    
+                if(usuario == "Ronaldo" && Contraseña == "1247")
+                {
+                   window.location.replace('index.html');
+                }
+                else
+                {
+                    alert("Usuario o contraseña incorrecto");
+                }
+            }
+    
+    
+        </script>
+    </head>
+<body class="fondologin">
+   
+    <form class="contenedor2">
+		<table>
+            <h1>INGRESE DATOS</h1>
+			<tr>
+                <td><label>USUARIO: </label></td>
+                <td><input type="text" name="usuario" id="usuario"></td>
+			</tr>
+			<tr>
+                <td><label>CONTRASEÑA: </label></td>
+                <td><input type="password" name="pass" id="pass"></td>
+			</tr>
+			<tr>
+                <td colspan="2"><input type="button" name="btnVerifivaca" id="btnVerifica" onclick="validar()"
+                     value="Login" > </td>
+			</tr>
+		</table>
+    </form>
+   
+    
+</body>
+</html>
